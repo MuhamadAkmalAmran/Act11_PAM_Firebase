@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "381862434519",
+    "project_id": "fir-kelasa-a70e6",
+    "storage_bucket": "fir-kelasa-a70e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381862434519:android:407e44ea351fd5caf8c292",
+        "android_client_info": {
+          "package_name": "com.example.act11_pam_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381862434519-ms036l8fbhu1gtj0vu52fpjkrsp7h7gu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYAya9vGvyiHBt95uFqokcBLCzHsXLCjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381862434519-ms036l8fbhu1gtj0vu52fpjkrsp7h7gu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381862434519:android:cd7446813aec9227f8c292",
+        "android_client_info": {
+          "package_name": "com.example.activity7_pam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381862434519-ms036l8fbhu1gtj0vu52fpjkrsp7h7gu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYAya9vGvyiHBt95uFqokcBLCzHsXLCjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381862434519-ms036l8fbhu1gtj0vu52fpjkrsp7h7gu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
