@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
                              */
                             case 0:
                                 Intent intent = new Intent(getApplicationContext(), EditorActivity.class);
-                                intent.putExtras("id", list.get(pos).getId());
-                                intent.putExtras("name", list.get(pos).getName());
-                                intent.putExtras("email", list.get(pos).getEmail());
+                                intent.putExtra("id", list.get(pos).getId());
+                                intent.putExtra("name", list.get(pos).getName());
+                                intent.putExtra("email", list.get(pos).getEmail());
                                 startActivity(intent);
                                 break;
                             case 1:
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-        RecyclerView.ItemDecoration decoration = new DividerItemDecoration(getApplicationContext());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
+        RecyclerView.ItemDecoration decoration = new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(decoration);
         recyclerView.setAdapter(userAdapter);
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         list.clear();
-                        if (task.isSuccessful());
+                        if (task.isSuccessful())
                         {
                             /*
                             *code ini mengambil data dari collector
@@ -145,8 +145,10 @@ public class MainActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                 });
+
+        }
         /*
-        *method untuk menghapus data
+         *method untuk menghapus data
          */
         private void deleteData(String id)
         {
@@ -163,7 +165,6 @@ public class MainActivity extends AppCompatActivity {
                             progressDialog.dismiss();
                             getData();
                         }
-                    })
-        }
+                    });
     }
 }

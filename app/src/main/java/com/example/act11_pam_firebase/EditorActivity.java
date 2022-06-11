@@ -70,7 +70,7 @@ public class EditorActivity extends AppCompatActivity {
 
     private void saveData(String name, String email)
     {
-        Map<String>,Object> user = new HashMap<>();
+        Map<String,Object> user = new HashMap<>();
         user.put("name", name);
         user.put("email", email);
 
